@@ -1,0 +1,16 @@
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+# Eclipse files #
+.classpath
+.project
+.settings/
+
+# Visual Studio Code #
+.vscode/
+
+# Maven build files #
+target/

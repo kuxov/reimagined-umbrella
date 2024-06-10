@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="violetplugin-statediagram" />
+        <module name="violet-framework" />
+        <module name="violetproduct-swing" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="violetplugin-activitydiagram" target="17" />
+      <module name="violetplugin-classdiagram" target="17" />
+      <module name="violetplugin-objectdiagram" target="17" />
+      <module name="violetplugin-sequencediagram" target="17" />
+      <module name="violetplugin-usecasediagram" target="17" />
+      <module name="violetproduct-deb" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
