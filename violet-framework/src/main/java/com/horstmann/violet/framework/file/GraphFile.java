@@ -1349,7 +1349,7 @@ public class GraphFile implements IGraphFile {
                 "\t\t\t\t\t\t<Parameter>\n" +
                 "\t\t\t\t\t\t\t<Name><![CDATA[combineMode]]></Name>\n" +
                 "\t\t\t\t\t\t\t<Value Class=\"CodeValue\">\n" +
-                "\t\t\t\t\t\t\t\t<Code><![CDATA[self.ENTITY"+new Random().nextInt(1)+1+"]]></Code>\n" +
+                "\t\t\t\t\t\t\t\t<Code><![CDATA[self.ENTITY1]]></Code>\n" +
                 "\t\t\t\t\t\t\t</Value>\n" +
                 "\t\t\t\t\t\t</Parameter>\n" +
                 "\t\t\t\t\t\t<Parameter>\n" +
