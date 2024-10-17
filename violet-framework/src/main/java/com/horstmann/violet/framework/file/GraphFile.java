@@ -52,6 +52,8 @@ import java.sql.*;
 import java.text.DecimalFormat;
 import java.text.MessageFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -331,7 +333,8 @@ public class GraphFile implements IGraphFile {
 
         com.itextpdf.text.Document document = new com.itextpdf.text.Document();
 
-        PdfWriter.getInstance(document, new FileOutputStream("\\MODELS\\"+graph.getTimeStamp()+"\\report.pdf"));
+        PdfWriter.getInstance(document, new FileOutputStream("\\MODELS\\"+graph.getTimeStamp()+"\\report_"+
+                LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd_MM_yyyy_HH_mm_ss"))+".pdf"));
 
         document.open();
 
@@ -1349,7 +1352,7 @@ public class GraphFile implements IGraphFile {
                 "\t\t\t\t\t\t<Parameter>\n" +
                 "\t\t\t\t\t\t\t<Name><![CDATA[combineMode]]></Name>\n" +
                 "\t\t\t\t\t\t\t<Value Class=\"CodeValue\">\n" +
-                "\t\t\t\t\t\t\t\t<Code><![CDATA[self.ENTITY1]]></Code>\n" +
+                "\t\t\t\t\t\t\t\t<Code><![CDATA[self.ENTITY"+new Random().nextInt(1)+1+"]]></Code>\n" +
                 "\t\t\t\t\t\t\t</Value>\n" +
                 "\t\t\t\t\t\t</Parameter>\n" +
                 "\t\t\t\t\t\t<Parameter>\n" +

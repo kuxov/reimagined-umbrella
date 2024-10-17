@@ -14,3 +14,11 @@
 
 # Maven build files #
 target/
+
+.idea
+.github
+
+violet-framework/target
+violet-statediagram/target
+violetproduct-exe/target
+violetproduct-swing/target
